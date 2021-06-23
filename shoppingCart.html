@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="You can find the items you selected here"
+    />
+
+    <title>SYTLiSH</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/pageBase.css" />
+    <link rel="stylesheet" href="css/shoppingCart.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-NQ8DCF41X0"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-NQ8DCF41X0");
+  </script>
+
+  <body>
+    <div class="wrapper-noFooter">
+      <div class="top">
+        <header class="base">
+          <div class="left-header">
+            <a href="index.html" class="home-tag web-logo"
+              ><img src="img/btn-logo-01.svg" alt=""
+            /></a>
+            <ul class="top-navbar">
+              <li class="navbar navbar-1">
+                <a href="index.html?tag=women" class="women-tag">女裝</a>
+              </li>
+              <li class="navbar">
+                <a href="index.html?tag=men" class="men-tag">男裝</a>
+              </li>
+              <li class="navbar">
+                <a href="index.html?tag=accessories" class="accessories-tag"
+                  >配件</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="right-header">
+            <div class="combined-search-column">
+              <i class="search-tag search-icon"
+                ><img src="img/search.png" alt=""
+              /></i>
+              <form method="get" action="./">
+                <input
+                  type="text"
+                  name="tag"
+                  id="inputSearchWord"
+                  class="searh-column"
+                />
+              </form>
+            </div>
+            <div class="cart">
+              <a href="shoppingCart.html">
+                <img src="img/cart.png" alt="" class="shopping-cart" />
+                <span id="cart-number">0</span>
+              </a>
+            </div>
+            <img src="img/btn-member-01-normal.svg" alt="" class="member" />
+          </div>
+        </header>
+
+        <div class="seperate-line"></div>
+      </div>
+
+      <div id="shopping-Cart"></div>
+
+      <div class="mobile-search-icon">
+        <img src="img/search.png" alt="" />
+      </div>
+
+      <div class="mobile-combined-search-column">
+        <i class="search-tag search-icon"
+          ><img src="img/search.png" alt=""
+        /></i>
+        <form method="get" action="./">
+          <input
+            type="text"
+            name="tag"
+            id="inputSearchWord"
+            class="searh-column"
+          />
+        </form>
+      </div>
+
+      <div class="bottom-line">
+        <div class="mobile-bottom">
+          <a href="shoppingCart.html" class="mobile-shopping-cart">
+            <div class="combined-mobile-shopping-cart-icon">
+              <img
+                src="img/cart-mobile.png"
+                alt=""
+                class="mobile-shopping-cart-icon"
+              />
+              <span id="cart-number">0</span>
+            </div>
+            <span>購物車</span>
+          </a>
+          <div class="mobile-bottm__seperateLine"></div>
+          <div class="mobile-member">
+            <img
+              src="img/btn-member-02-normal.svg"
+              alt=""
+              class="mobile-member-icon"
+            />
+            <span>會員</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <footer>
+        <div class="main-footer">
+          <div>
+            <ul class="footer-navbar">
+              <li class="stylish footer-item">
+                <a href="index.html">關於 Stylish</a>
+              </li>
+              <li class="footer-item"><a href="index.html">服務條款</a></li>
+              <li class="footer-item"><a href="index.html">隱私政策</a></li>
+              <li class="footer-item"><a href="index.html">聯絡我們</a></li>
+              <li class="FAQ footer-item"><a href="index.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="contact-info">
+            <img
+              src="img/btn-line-01-normal.svg"
+              alt=""
+              class="contact-info-icon"
+            />
+            <img
+              src="img/btn-twitter-01-normal.svg"
+              alt=""
+              class="contact-info-icon"
+            />
+            <img
+              src="img/btn-facebook-01-normal.svg"
+              alt=""
+              class="contact-info-icon"
+            />
+          </div>
+          <div class="copywrite-row">
+            <span class="copywrite">&copy; 2018. All rights reserved.</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/pageBase.js"></script>
+    <script src="js/shoppingCart.js"></script>
+    <script src="https://js.tappaysdk.com/tpdirect/v5.5.0"></script>
+    <script>
+      TPDirect.setupSDK(
+        12348,
+        "app_pa1pQcKoY22IlnSXq5m5WP5jFKzoRG58VEXpT7wU62ud7mMbDOGzCYIlzzLF",
+        "sandbox"
+      );
+    </script>
+    <script src="js/payment.js"></script>
+  </body>
+</html>
