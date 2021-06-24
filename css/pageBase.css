@@ -204,7 +204,7 @@ base {
 }
 
 .wrapper-noFooter {
-  min-height: calc(100% - 115px);
+  min-height: calc(100vh - 115px);
 }
 
 .footer {
